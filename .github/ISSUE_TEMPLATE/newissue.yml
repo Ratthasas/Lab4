@@ -9,44 +9,30 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Contact Details**  
-        What is your name?  
-        *ex. Ratthasas Singhamnee*
-        
-        Thank you for taking the time to fill out this feature request!
+        Thanks for taking the time to suggest a new feature or improvement!
   - type: input
     id: contact
     attributes:
-      label: ""  # Empty label to hide the default one
+      description: What is your name?
+      label: Contact Details
       placeholder: ex. Ratthasas Singhamnee
     validations:
       required: false
-
-  - type: markdown
-    attributes:
-      value: |
-        **Type of Request**  
-        Select the type of your request:
   - type: dropdown
     id: request-type
     attributes:
-      label: ""
+      description: Select the type of your request.
+      label: Type of request?
       options:
         - New Feature
         - Improvement
       default: 0
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        **Operating System**  
-        What is the OS which you want to suggest?
   - type: dropdown
     id: os
     attributes:
-      label: ""
+      label: What is the OS which you want to suggest?
       options:
         - Windows
         - macOS
@@ -54,16 +40,11 @@ body:
         - Other
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        **Details of Suggestion**  
-        Explain what you want:
   - type: textarea
     id: suggestion-details
     attributes:
-      label: ""
+      description: Explain what you want
+      label: What are the details of your suggestion?
       placeholder: Feature details!
     validations:
       required: true
