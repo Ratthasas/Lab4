@@ -8,14 +8,14 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: | Thanks for taking the time to fill out this bug report!
+      value: |
+        Thanks for taking the time to suggest a new feature or improvement!
   - type: input
     id: contact
     attributes:
       description: What is your name?
       label: Contact Details
       placeholder: ex. Ratthasas Singhamnee
-      description: Thanks for taking the time to fill out this bug report!
     validations:
       required: false
   - type: dropdown
