@@ -15,8 +15,8 @@ body:
       description: What is your name?
       label: Contact Details
       placeholder: ex. Ratthasas Singhamnee
-      description: What is your name?
       description: Thanks for taking the time to fill out this bug report!
+    validations:
       required: false
   - type: dropdown
     id: request-type
