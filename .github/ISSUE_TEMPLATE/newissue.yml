@@ -1,7 +1,7 @@
-name: Feature Report
-description: File a feature report.
+name: Feature Request
+description: Suggest a new feature or improvement.
 title: "[Feature]: "
-labels: ["bug", "triage"]
+labels: ["feature", "enhancement"]
 projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - octocat
@@ -9,56 +9,51 @@ body:
   - type: markdown
     attributes:
       value: |
+        Thanks for taking the time to suggest a new feature or improvement!
   - type: input
     id: contact
     attributes:
       label: Contact Details
-      description: Whai is your name?
-      placeholder: ex. Ratthasas Singhamanee
-      description: Thanks for taking time to fill out this bug report!
+      description: What is your name or how can we get in touch with you if needed?
+      placeholder: ex. Ratthasas Singhamnee
     validations:
       required: false
-  - type: textarea
-    id: what-details
-    attributes:
-      label: What are the details of your suggestion?
-      description: Explain what you want
-      placeholder: Tell us what you see!
-      value: "Feature details!"
-    validations:
-      required: true
   - type: dropdown
-    id: version
+    id: request-type
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Type of request?
+      description: Select the type of your request.
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - New Feature
+        - Improvement
       default: 0
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: os
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
+      label: What is the OS which you want to suggest?
+      description: Select the operating system for the feature suggestion.
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
   - type: textarea
-    id: logs
+    id: suggestion-details
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: What are the details of your suggestion?
+      description: Explain what you want, and include any relevant details.
+      placeholder: Feature details!
+    validations:
+      required: true
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      description: By submitting this suggestion, you agree to follow our [Code of Conduct](https://example.com).
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
