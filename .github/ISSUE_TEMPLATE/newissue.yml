@@ -9,22 +9,22 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
   - type: input
     id: contact
     attributes:
       label: Contact Details
       description: Whai is your name?
       placeholder: ex. Ratthasas Singhamanee
+      description: Thanks for taking time to fill out this bug report!
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: what-details
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
+      label: What are the details of your suggestion?
+      description: Explain what you want
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "Feature details!"
     validations:
       required: true
   - type: dropdown
